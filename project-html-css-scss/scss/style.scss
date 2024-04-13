@@ -1,0 +1,103 @@
+//import
+@use "./partials/base";
+@use "./partials/mixin";
+@use "./partials/reset";
+@use "./partials/variables";
+
+//components
+@use "./components/header";
+@use "./components/footer";
+
+//page
+
+//1.home
+@use "./pages/home/index" as home;
+
+//2. products
+@use "./pages/products/index" as products;
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+	background: #f7f7f7;
+
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    // width: 100%;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.6666666269302368px 8.333333015441895px 0px rgba(0, 0, 0, 0.15);
+    .container{
+        width: var(--container-width);
+        margin: 0 auto;
+        height: 108px;
+        .header-logo{
+            height: 108px;
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            column-gap: 5rem;
+            .menu{
+                height: 10.8rem;
+                line-height: 10.8rem;
+            }
+            .cart-icon{
+                width: 2.5rem;
+                height: 2.2rem;
+                position: relative;
+                img{
+                    display: block;
+                    width: 2.5rem;
+                    height: 2.2rem;
+                    
+                }
+                span{
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    background-color: red;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 13px;
+                    border-radius: 50%;
+                    width: 13px;
+                    padding-top: 1.5px;
+
+                }
+            }
+            .nav-bar{
+                display: none;
+            }
+
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            column-gap: 5rem;
+            li a{
+                color: $link-color;
+                font-family: Inter;
+                font-size: $fontsize;
+                font-weight: 600;
+                line-height: 2.1rem;
+            }
+        }
+        
+
+
+    }
+}
