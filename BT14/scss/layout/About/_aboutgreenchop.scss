@@ -1,0 +1,172 @@
+.bg-about-brand {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        background: #F2FFEC;
+        height: 20rem;
+        width: 100vw;
+        left: 0;
+        top: 0%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-about-brand-title {
+        color: $textColor;
+        font-size: 5.2rem;
+        font-weight: 700;
+        padding: 6.9rem 3.5rem;
+    }
+
+    .achievement-container {
+        margin-top: 12rem;
+    }
+}
+
+.about-greenchop {
+    margin-top: 12rem;
+
+    .greenchop-container {
+        padding: 0 13.5rem;
+
+        .greenchop-title {
+            margin: 0 auto;
+            color: $textColor;
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+
+    .greenchop-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6rem;
+
+        .greenchop-content-detail {
+            margin: 0;
+
+        }
+
+        .greenchop-detail-left {
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            p {
+                display: block;
+                width: 77%;
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+        .greenchop-detail-right {
+            @extend .greenchop-detail-left;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .about-greenchop {
+        .greenchop-content {
+            .greenchop-content-detail {
+                margin: 0;
+
+            }
+
+            .greenchop-detail-left {
+                text-align: center;
+                justify-content: center;
+
+                p {
+
+                    width: 100%;
+                }
+            }
+
+            .greenchop-detail-right {
+                justify-content: center;
+                @extend .greenchop-detail-left;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-greenchop {
+        margin-top: 12rem;
+
+        .greenchop-container {
+            padding: 0 13.5rem;
+
+            .greenchop-title {
+                margin: 0 auto;
+                color: $textColor;
+                font-size: 3.8rem;
+                font-weight: 800;
+                line-height: 5rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+
+        .greenchop-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 6rem;
+
+            .greenchop-content-detail {
+                margin: 40px 0;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .bg-about-brand {
+        .bg-about-brand-title {
+           text-align: center; 
+        }
+    }
+    .about-greenchop {
+        margin-top: 3rem;
+    
+        .greenchop-container {
+            padding: 0 2rem;
+            
+            .greenchop-title {
+                color: $textColor;
+                font-size: 4rem;
+                font-weight: 800;
+                line-height: 5rem;
+                margin-bottom: 2rem;
+                
+            }
+        }
+    
+        .greenchop-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10rem;
+    
+            .greenchop-content-detail {
+                margin: 0;
+    
+            }
+    
+        }
+    }
+}

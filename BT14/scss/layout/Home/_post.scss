@@ -1,0 +1,98 @@
+.post {
+    margin-top: 14rem;
+}
+.post-title {
+    text-align: center;
+    margin-bottom: 2.8rem;
+    color: $textColor;
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 5rem;
+}
+
+.post-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.45rem;
+    color: $textColor;
+    width: 54%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post-btn {
+    @include flexCenterAll;
+
+    .btn-post-detail {
+        margin-top: 12rem;
+        .post-link {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $textColor;
+            padding: 1.4rem 2.6rem;
+            background: white;
+            border: 1px solid $primaryColor;
+            border-radius: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}
+
+.post-content {
+    display: flex;
+    column-gap: 2.8rem;
+    margin-top: 6rem;
+    flex-wrap: nowrap;
+
+    .post-item {
+        display: flex;
+        flex-direction: row;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+.post-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .post-time-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $primaryColor;
+    }
+
+    .post-time-icon {
+        display: flex;
+        align-items: center;
+        column-gap: 1.2rem;
+
+        .post-icon-txt {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #A3A3A3;
+        }
+    }
+}
+
+.post-detail {
+    .post-detail-title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $textColor;
+        margin-top: 3.2rem;
+    }
+
+    .post-detail-txt {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.45rem;
+        color: $textColor;
+    }
+}

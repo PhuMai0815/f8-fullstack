@@ -1,0 +1,101 @@
+.mission {
+    margin-top: 12rem;
+
+    .mission-detail {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 3.2rem;
+        padding-left: 7rem;
+
+        h2 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: $textColor;
+            line-height: 5rem;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+            color: $textColor;
+            width: 69%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .mission {
+        margin-top: 12rem;
+
+        .mission-img {
+            @include flexCenterAll;
+        }
+
+        .mission-detail {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 3.2rem;
+            padding: 0 13.5rem;
+            text-align: center;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.45rem;
+                color: $textColor;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .mission {
+        margin-top: 12rem;
+
+        .mission-img {
+            @include flexCenterAll;
+            display: none;
+        }
+
+        .mission-detail {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 3.2rem;
+            padding: 0 13.5rem;
+            text-align: center;
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.45rem;
+                color: $textColor;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mission {
+        margin-top: 12rem;
+
+        .mission-img {
+            @include flexCenterAll;
+            display: none;
+        }
+
+        .mission-detail {
+
+            row-gap: 3.2rem;
+            padding: 0 2.5rem;
+            
+        }
+    }
+}

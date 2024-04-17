@@ -1,0 +1,207 @@
+.how-to-use {
+    .header-title {
+        text-align: center;
+
+        h2 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 5rem;
+            margin-bottom: 3rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+        }
+    }
+
+    .how-to-use-item {
+        margin-top: 6rem;
+        counter-reset: numbers;
+
+        .list-detail {
+            .list-item {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.45rem;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                padding-top: 3.8rem;
+
+                &::before {
+                    counter-increment: numbers;
+                    content: '0' counter(numbers);
+                    font-size: 10rem;
+                    font-weight: 800;
+                    margin-top: 1.8rem;
+                    margin-right: 1.2rem;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 14.8rem;
+                    height: 14.8rem;
+                    border-radius: 99px;
+                    background-color: #FFF0E7;
+                    left: 8rem;
+                    top: 0;
+                    z-index: -1;
+                }
+
+                p {
+                    width: 50%;
+
+                }
+            }
+        }
+
+    }
+
+    .how-to-use-content {
+        margin-top: 12.4rem;
+        flex-wrap: nowrap;
+
+        .how-to-use-content-txt {
+            margin-left: 13rem;
+            position: relative;
+            padding: 10.9rem 0 6.2rem 7.5rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+            margin-right: 5.4rem;
+            background-color: white;
+            box-shadow: 31px 28px 124px rgba(0, 0, 0, 0.06);
+            ;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1rem;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                border-radius: 0px 10px 10px 0px;
+                background: #46B20F;
+            }
+
+            p {
+                width: 73%;
+            }
+        }
+
+        .how-to-use-content-img {
+            img {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .how-to-use {
+        .header-title {
+            margin-top: 12rem;
+            text-align: center;
+        }
+
+        .how-to-use-item {
+            margin-top: 6rem;
+
+            .list-detail {
+                .list-item {
+                    margin-bottom: 10rem;
+
+                    &::before {
+                        margin-top: 1.8rem;
+                        margin-right: 3rem;
+                    }
+
+                    &::after {
+                        width: 16.5rem;
+                        height: 16.5rem;
+                        left: 15.5rem;
+                        top: -1.5rem;
+                    }
+                }
+            }
+        }
+
+        .how-to-use-content {
+            flex-wrap: wrap;
+
+            .how-to-use-content-txt {
+                padding: 7.5rem;
+                margin-bottom: 6rem;
+                margin-left: 7.5rem;
+                margin-right: 7.5rem;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            .how-to-use-content-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .how-to-use {
+        .how-to-use-item {
+            .list-detail {
+                .list-item {
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .how-to-use-content {
+            margin-top: 8rem;
+            .how-to-use-content-txt {
+                padding: 6.5rem;
+                margin-bottom: 6rem;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .how-to-use {
+        .how-to-use-item {
+            .list-detail {
+                .list-item {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .how-to-use-content {
+            margin-top: 2rem;
+            
+            
+            .how-to-use-content-txt {
+                padding: 7.5rem;
+                margin: 6rem;
+                margin-right: 3rem;
+                margin-left: 3rem;
+            }
+        }
+    }
+}

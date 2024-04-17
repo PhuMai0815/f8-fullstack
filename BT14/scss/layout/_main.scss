@@ -1,0 +1,122 @@
+// Home
+.main {
+    padding-top: 13.5rem;
+}
+// about
+@import './Home/aboutbrand';
+@import './Home/achievement';
+@import './Home/products';
+@import './Home/post';
+@import './Home/quality';
+@import './Home/service';
+@import './Home/form';
+
+// about
+@import './About/aboutgreenchop';
+@import './About/main-products';
+@import './About/mission';
+
+// products
+
+@import './Products/products-detail';
+@import './Products/howtouse';
+@import './Products/protect';
+
+
+.products-tab {
+    display: none;
+}
+
+.about-brand {
+    display: none;
+}
+
+.home {
+    display: none;
+}
+input[id="slide"]:checked ~ .home {
+    display: block;
+}
+
+input[id="slide1"]:checked ~ .about-brand {
+    display: block;
+}
+
+input[id="slide2"]:checked ~ .products-tab {
+    display: block;
+}
+
+// about
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 991.98px) {
+
+    /*Header*/
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .header {
+
+        .align-items-center {
+            justify-content: center;
+        }
+
+        .menu-toggle {
+            display: block;
+            font-size: 2.5rem;
+            margin-right: 5rem;
+        }
+
+        .header-logo {
+           text-align: center;
+            margin-left: 10rem;
+        }
+
+        .header-menu {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: black;
+            min-width: calc(100% / 2);
+            translate: -100%;
+            transition: translate 0.4s ease;
+            z-index: 1;
+
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+                padding: 3rem 0;
+
+
+                a {
+                    margin: 2.5rem 5rem;
+
+                    label {
+                        padding: 0.5rem 0;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .header-icon {
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 3.5rem;
+        }
+    }
+
+    input[type="checkbox"]:checked~.header-menu {
+        translate: 0;
+    }
+
+    input[type="checkbox"]:checked~.overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+}

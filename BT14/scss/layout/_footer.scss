@@ -1,0 +1,134 @@
+.footer {
+    background-color: #F2FFEC;
+    padding-top: 8rem;
+    margin-top: 12rem;
+}
+
+.footer-logo-wrap {
+    img {
+        display: block;
+        width: auto;
+    }
+
+    .footer-logo-content {
+        width: 50%;
+        margin-left: 4.5rem;
+
+        .footer-logo-txt {
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+        }
+    }
+}
+
+.footer-content {
+    h4 {
+        color: $primaryColor;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.6rem;
+    }
+
+    .footer-list {
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+
+        .footer-list-link {
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2.45rem;
+            width: 70%;
+        }
+
+    }
+
+
+    .flex-link {
+        display: flex;
+        align-items: center;
+        column-gap: 1.2rem;
+
+        span {
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 2.4rem;
+        }
+    }
+}
+
+.footer-bottom {
+    .footer-copyright {
+        margin-left: 3rem;
+    }
+
+    .footer-bottom-line {
+        height: 2px;
+        width: 95%;
+        background-color: #A3A3A3;
+        margin: 0 auto;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        margin-top: 2.9rem;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3.5rem;
+
+        .social-list {
+            display: flex;
+            column-gap: 0.8rem;
+
+            .social-item {
+                width: 4.8rem;
+                height: 4.8rem;
+                border-radius: 50%;
+                border: none;
+                background-color: #DCFFCA;
+                @include flexCenterAll;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 992.98px) {
+    .footer-logo-wrap {
+        display: none;
+    }
+    .footer-content-wrap {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content {
+        .footer-list {
+            .footer-list-link {
+                width: 100%;
+            }
+    
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer-content-wrap {
+        display: flex;
+        
+        .footer-content {
+            text-align: center;
+            .footer-list-item {
+                margin: 0 auto;
+            }
+        }
+    }
+}

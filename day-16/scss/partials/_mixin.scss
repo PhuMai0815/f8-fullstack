@@ -1,0 +1,56 @@
+@mixin resetCSS {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+}
+@mixin animation-main {
+  animation-name: run;
+  animation-duration: 1s;
+  @keyframes run {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80px;
+    }
+  }
+}
+@mixin animation-infor {
+  animation-name: run-2;
+  animation-duration: 1s;
+  @keyframes run-2 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 110px;
+    }
+  }
+}
+@mixin animation-new {
+  animation-name: run-3;
+  animation-duration: 1s;
+  @keyframes run-3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60px;
+    }
+  }
+}
+@mixin animation-contact {
+  animation-name: run-4;
+  animation-duration: 1s;
+  @keyframes run-4 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60px;
+    }
+  }
+}

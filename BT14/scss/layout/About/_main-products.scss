@@ -1,0 +1,94 @@
+.main-products {
+    background-color: pink;
+    margin-top: 12rem;
+
+    .main-products-content {
+        padding: 8rem 0;
+        @include flexCenterAll;
+        flex-wrap: wrap;
+        row-gap: 6rem;
+
+        h2 {
+            color: $textColor;
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 5rem;
+        }
+
+        p {
+            text-align: center;
+            width: 67%;
+            color: $textColor;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            position: relative;
+
+            &::before {
+                content: '\f10d';
+                position: absolute;
+                top: -3rem;
+                left: -10rem;
+                font-family: 'FontAwesome';
+                font-size: 10rem;
+                color: white;
+            }
+
+            &::after {
+                position: absolute;
+                content: "\f10e";
+                font-family: 'FontAwesome';
+                bottom: -3rem;
+                right: -10rem;
+                font-size: 10rem;
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-products {
+        background-color: pink;
+        margin-top: 12rem;
+
+        .main-products-content {
+            padding: 8rem 2rem;
+            @include flexCenterAll;
+            flex-wrap: wrap;
+            row-gap: 6rem;
+            text-align: center;
+
+            h2 {
+                color: $textColor;
+                font-size: 3.8rem;
+                font-weight: 800;
+                line-height: 5rem;
+            }
+
+            p {
+                width: 65%;
+
+                &::before {
+                    content: '\f10d';
+                    position: absolute;
+                    top: -3rem;
+                    left: -8rem;
+                    font-family: 'FontAwesome';
+                    font-size: 8rem;
+                    color: white;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "\f10e";
+                    font-family: 'FontAwesome';
+                    bottom: -3rem;
+                    right: -8rem;
+                    font-size: 8rem;
+                    color: white;
+                }
+            }
+        }
+    }
+}
