@@ -75,7 +75,7 @@ if (n <= 1 || n % 1 !== 0) {
     document.write(" " + n + " là số nguyên tố <br>");
   }
 }
-// Bai 5:
+// Bai 5: ve tam giac so
 var n = 5,
   result = " ",
   count = 1;
