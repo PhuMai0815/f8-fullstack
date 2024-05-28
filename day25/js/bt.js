@@ -64,7 +64,6 @@ function getNestedArr(categories, parentId = 0) {
     var parentElements = categories.filter(
       (category) => category.parent === parentId
     );
-
     var result = parentElements.map((item) => {
       const { parent, ...rest } = item;
       const children = getNestedArr(categories, item.id);
@@ -82,5 +81,4 @@ function getNestedArr(categories, parentId = 0) {
     return `This is an empty array!`;
   }
 }
-
 console.log(getNestedArr(categories));
