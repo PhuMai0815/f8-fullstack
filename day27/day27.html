@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang_Nhap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./day27.css">
+</head>
+<body>
+    <button class="btn">Đăng nhập</button>
+    <div class="box-user">
+        <div class="form-user">
+            <div class="header-btn">
+                <img class="logo" src="./Logo.png" alt="">
+            </div>
+            <div class="header-btn">
+                <div class="loggin">
+                    <h3 class="title-header tab-login">Đăng nhập</h3>
+                </div>
+                <div class="register">
+                    <h3 class="title-header tab-register">Đăng ký</h3>
+                </div>
+            </div>
+            <div class="bodyForm box-login">
+                <span class="sub-title">Với các tài khoản xã hội</span>
+                <div class="social">
+                    <div class="google-link link">
+                        <img class="icon-link" src="https://static.vecteezy.com/system/resources/previews/012/871/371/original/google-search-icon-google-product-illustration-free-png.png" alt="">
+                        <span class="sub-link">Google</span>
+                    </div>
+                    <div class="facebook-link link">
+                        <img class="icon-link" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+                        <span class="sub-link">Facebook</span>
+                    </div>
+                </div>
+                <div class="line-body">
+                    <hr>
+                    <span>hoặc</span>
+                </div>
+                <form  class="form-login">
+                    <label class="email-lb lb">
+                        <span class="name-lb">Email</span>
+                        <input id="email_login" class="email-input text-input" type="text" placeholder="Email">
+                        <div class="warring err_email-login"></div>
+                    </label>
+                    <label class="pass-lb lb">
+                        <span class="name-lb">Mật khẩu</span>
+                        <input id="pass_login" type="password" placeholder="Mật khẩu" class="pass-input text-input">
+                        <span class="eye"><i class="fa-solid fa-eye"></i></span>
+                        <div class="warring err_pass-login"></div>
+                    </label>
+                    <a class="forgot-pass" href="#">Quên mật khẩu</a>
+                    <div class="btn-form">
+                        <button class="btn-login btn-form">Đăng nhập</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="bodyForm box-register">
+                <span class="sub-title">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</span>
+                <form  class="form-register">
+                    <label class="fullname-lb lb">   
+                        <span class="name-lb">Họ và tên</span>
+                        <input id="name_register" class=" email-input text-input" type="text" placeholder="Họ và tên">
+                        <div class="warring err_name-register"></div>
+                    </label>
+                    <label class="email-lb lb">
+                        <span class="name-lb">Email</span>
+                        <input id="email_register" class="email-input text-input" type="text" placeholder="Email">
+                        <div class="warring err_email-register"></div>
+                    </label>
+                    <label class="pass-lb lb">
+                        <span class="name-lb">Mật khẩu</span>
+                        <input id="pass_register" type="text" placeholder="Mật khẩu" class="pass-input text-input">
+                        <div class="warring err_pass-register"></div>
+                    </label>
+                    <div class="condition">
+                        <p>Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+                            <a href="#">điều kiện về qui định và chính sách của Dân trí</a>
+                        </p>
+                    </div>
+                    <div class="btn-form">
+                        <button class="btn-login btn-form">Đăng ký</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="./day27.js"></script>
+</body>
+</html>
