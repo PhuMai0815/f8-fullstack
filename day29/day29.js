@@ -6,16 +6,12 @@ var nextBtn = document.querySelector(".next");
 var items = document.querySelectorAll(".item");
 var dots = document.querySelector(".dots");
 
-// Lấy danh sách 1 item
 var carouselItems = carouselInner.children;
 
-// Tính chiều rộng của 1 item
 var itemWidth = carouselInner.clientWidth; //trả về chiều rộng của element
 
-// tính tổng các kích thước item
 var totalWidth = itemWidth * carouselItems.length;
 
-// cập nhật CSS cho carousel-inner
 carouselInner.style.width = `${totalWidth}px`;
 
 var pagination = Array.from(carouselItems)
@@ -55,20 +51,16 @@ function prevSlide() {}
 
 nextBtn.addEventListener("click", function () {
   if (Math.abs(position) < totalWidth - itemWidth) {
-    // tính toán toạ độ
     position -= itemWidth;
 
-    // cập nhật Css carousel-inner chuyển slide
     carouselInner.style.translate = `${position}px`;
   }
 });
 
 prevBtn.addEventListener("click", function () {
   if (position < 0) {
-    // tính toán toạ độ
     position += itemWidth;
 
-    // cập nhật Css carousel-inner chuyển slide
     carouselInner.style.translate = `${position}px`;
   }
 });
