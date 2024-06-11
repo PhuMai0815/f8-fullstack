@@ -48,3 +48,28 @@ button:hover {
   margin-top: 20px;
   font-size: 18px;
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  background-color: #4caf50; /* Màu nền */
+  border: none; /* Bỏ viền */
+  color: white; /* Màu chữ */
+  padding: 15px 32px; /* Khoảng cách bên trong */
+  text-align: center; /* Căn giữa chữ */
+  text-decoration: none; /* Bỏ gạch chân */
+  display: inline-block; /* Hiển thị dạng khối */
+  font-size: 16px; /* Kích thước chữ */
+  margin: 4px 2px; /* Khoảng cách ngoài */
+  cursor: pointer; /* Con trỏ chuột */
+  border-radius: 12px; /* Bo tròn góc */
+}
+button:hover {
+  background-color: #45a049; /* Màu nền khi hover */
+}
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
