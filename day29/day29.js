@@ -1,7 +1,6 @@
 const button = document.getElementById("speakButton");
 const status = document.getElementById("status");
 
-// Kiểm tra hỗ trợ Web Speech API
 if ("webkitSpeechRecognition" in window) {
   const recognition = new webkitSpeechRecognition();
   recognition.lang = "vi-VN";
@@ -24,5 +23,5 @@ if ("webkitSpeechRecognition" in window) {
     recognition.start();
   });
 } else {
-  status.textContent = "Trình duyệt của bạn không hỗ trợ Web Speech API.";
+  status.textContent = "Trình duyệt của bạn không hỗ trợ.";
 }
