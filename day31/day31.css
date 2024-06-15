@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.play-btn {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-start {
+  margin-right: 5px;
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: gray;
+  margin: 30px 10px;
+  cursor: pointer;
+}
+.progress-bar .progress {
+  position: absolute;
+  background: rgb(88, 217, 103);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.progress-bar .progress .dot {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  translate: 50% -50%;
+}
+.time-hover {
+  position: absolute;
+  background-color: #383333;
+  translate: -25% -150%;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.time-hover::after {
+  position: absolute;
+  content: "";
+  border-color: #383333;
+  border-top: 5px;
+}
