@@ -65,3 +65,69 @@
   border-color: #383333;
   border-top: 5px;
 }
+
+.karaoke .play {
+  text-align: center;
+  border: none;
+  display: block;
+  margin: 30px auto;
+  background-color: blueviolet;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.karaoke .karaoke-inner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 100;
+  background-color: blueviolet;
+  color: #fff;
+  transition: top 0.4s ease;
+}
+
+.karaoke .karaoke-inner.show {
+  top: 0;
+}
+
+.karaoke .karaoke-container {
+  min-width: 90%;
+  margin: 0 auto;
+}
+
+.karaoke .karaoke-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karaoke .karaoke-content {
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.karaoke .karaoke-content p {
+  margin: 15px 0;
+}
+
+.karaoke .karaoke-content .word {
+  position: relative;
+  margin: 0 5px;
+}
+
+.karaoke .karaoke-content .word span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  color: rgb(252, 181, 0);
+}
