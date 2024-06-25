@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #333;
+}
+.list {
+  background: #0944a2;
+  width: 600px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.list-item {
+  background: #073682;
+  padding: 10px;
+  border: 1px solid #333;
+  margin: 2px 0;
+  color: #fff;
+}
+
+.list-item.title-module {
+  background: rgb(255, 111, 0);
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.placeholder {
+  display: none;
+  background: #303742;
+  pointer-events: none;
+}
+
+.flex {
+  display: flex;
+}
