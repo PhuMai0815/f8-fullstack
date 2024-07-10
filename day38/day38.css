@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title {
+  text-align: center;
+  margin: 30px 0;
+}
+.title .text-highlight {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: #60a5fa;
+  background-image: linear-gradient(90deg, #60a5fa 0%, #059669 100%);
+}
+.search-todos {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.todos {
+  display: flex;
+  column-gap: 20px;
+}
+.search-input {
+  width: 500px;
+  border: 1px solid #c7c7c7;
+  padding: 0 15px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1d4ed8;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.btn-add {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: 500;
+  background: #047857;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  height: 60px;
+  padding: 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 15px;
+}
+.task-option {
+  display: flex;
+  column-gap: 3px;
+}
+.btn-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+.delete-option {
+  background: #be123c;
+}
+.edit-option {
+  background: #1d4ed8;
+}
+.complete-option {
+  background: #9ca3af;
+}
+
+.task-title-done {
+  display: block;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #999;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid #999;
+}
+
+.box-add-task {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  background-color: #99999980;
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+  z-index: 1;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+.inner-box {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.inner-box .add-input {
+  margin: 20px 25px 30px 25px;
+}
+.btn-option-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  column-gap: 30px;
+}
+.save-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.save-btn {
+  background: #047857;
+}
+.cancel-btn {
+  color: #999;
+  border: 1px solid #afafaf;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
