@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container hidden">
+      <section class="wrapper">
+        <div class="form signup">
+          <header>Signup</header>
+          <form action="#" class="form-signup">
+            <input
+              type="text"
+              placeholder="Full name"
+              class="signup-name"
+              required
+            />
+            <span class="check-name"></span>
+            <input
+              type="email"
+              placeholder="Email address"
+              class="signup-email"
+              required
+            />
+            <span class="check-email"></span>
+            <input
+              type="password"
+              placeholder="Password"
+              class="signup-password"
+              required
+            />
+            <span class="check-password"></span>
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" />
+              <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" class="signup-btn" />
+          </form>
+        </div>
+        <div class="form login">
+          <header>Login</header>
+          <form action="#" class="form-login">
+            <input
+              type="email"
+              placeholder="Email address"
+              class="login-email"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="login-password"
+              required
+            />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" class="login-btn" />
+          </form>
+        </div>
+      </section>
+      <button class="btn btn-primary mt-3 go-back">GO BACK</button>
+    </div>
+    <div class="container">
+      <div class="home-page">
+        <h1>Blogger</h1>
+        <div class="btn-signin mb-3 signin">
+          <button class="btn btn-primary" type="button">Sign in</button>
+        </div>
+        <div class="post-submit">
+          <div class="link mb-3 hidden ">
+            <a href="#"><span class="name-user"></span></a>
+            <button class="btn btn-primary logout" type="button">Log out</button>
+          </div>
+          <form class="create-post hidden">
+            <div class="form mb-3">
+              <label for="1" class="form-label">Enter your title</label>
+              <input
+                type="text"
+                id="1"
+                placeholder="Please enter your title"
+                class="form-control"
+              />
+            </div>
+            <div class="form mb-3">
+              <label for="2" class="form-label">Enter your content</label>
+              <textarea
+                name="content"
+                id="2"
+                cols="30"
+                rows="10"
+                placeholder="Please enter your content"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button class="btn-primary btn btn-submit">Click me !</button>
+          </form>
+        </div>
+        <div class="blog-list"></div>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
